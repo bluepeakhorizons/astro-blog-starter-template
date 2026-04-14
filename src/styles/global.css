@@ -51,49 +51,105 @@ main {
   color: #333;
 }
 .hero {
-		text-align: center;
-		margin-bottom: 3rem;
+	text-align: center;
+	margin-bottom: 3rem;
 }
 .service-grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 2rem;
-		margin-top: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+	margin-top: 2rem;
 }
 .cta {
-		background: #f4f4f4;
-		padding: 2rem;
-		text-align: center;
-		border-radius: 8px;
-		margin-top: 3rem;
+	background: #f4f4f4;
+	padding: 2rem;
+	text-align: center;
+	border-radius: 8px;
+	margin-top: 3rem;
 }
 .social-cta {
-		text-align: center;
-		padding: 2rem 0;
+	text-align: center;
+	padding: 2rem 0;
 }
 .linkedin-button {
-		display: inline-flex;
-		align-items: center;
-		gap: 10px;
-		background-color: #0077b5; /* LinkedIn Blue */
-		color: white;
-		padding: 12px 24px;
-		border-radius: 4px;
-		text-decoration: none;
-		font-weight: bold;
-		transition: background-color 0.3s ease;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	background-color: #0077b5; /* LinkedIn Blue */
+	color: white;
+	padding: 12px 24px;
+	border-radius: 4px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
 }
 .linkedin-button:hover {
-		background-color: #005582;
+	background-color: #005582;
 }
 .button {
-		display: inline-block;
-		background: #004a99;
-		color: white;
-		padding: 0.8rem 1.5rem;
-		text-decoration: none;
-		border-radius: 5px;
-		font-weight: bold;
+	display: inline-block;
+	background: #004a99;
+	color: white;
+	padding: 0.8rem 1.5rem;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+}
+/* Form Styles */
+.contact-section {
+	background: #f9f9f9;
+	padding: 2.5rem;
+	border-radius: 8px;
+	border: 1px solid #e0e0e0;
+	margin: 3rem 0;
+}
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin-top: 1.5rem;
+}
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+label {
+	font-weight: bold;
+	font-size: 0.9rem;
+	color: #444;
+}
+input, select, textarea {
+	padding: 0.8rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+.submit-button {
+	background-color: #004a99;
+	color: white;
+	padding: 1rem;
+	border: none;
+	border-radius: 4px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+.submit-button:hover {
+	background-color: #003366;
+}
+
+.social-cta { text-align: center; margin-top: 2rem; }
+.linkedin-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	background-color: #0077b5;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 4px;
+	text-decoration: none;
+	font-weight: bold;
 }
 h1{
   font-size: 2.5rem;
