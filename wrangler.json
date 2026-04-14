@@ -10,5 +10,9 @@
   "observability": {
     "enabled": true
   },
-  "upload_source_maps": true
+  "upload_source_maps": true,
+  "vars": {
+    "POLICY_AUD": "778936fc8d2c94b93e9fc378114e923add2d53c391d72d459df537bb6e6e8c89",
+    "TEAM_DOMAIN": "https://villafuertecharlies.cloudflareaccess.com/cdn-cgi/access/certs"
+    }
 }
