@@ -47,9 +47,39 @@ main {
   width: 720px;
   max-width: calc(100% - 2em);
   margin: auto;
-  padding: 3em 1em;
+  padding: 2em 1em;
+  color: #333;
 }
-h1,
+.hero {
+		text-align: center;
+		margin-bottom: 3rem;
+}
+.service-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+		margin-top: 2rem;
+}
+.cta {
+		background: #f4f4f4;
+		padding: 2rem;
+		text-align: center;
+		border-radius: 8px;
+		margin-top: 3rem;
+}
+.button {
+		display: inline-block;
+		background: #004a99;
+		color: white;
+		padding: 0.8rem 1.5rem;
+		text-decoration: none;
+		border-radius: 5px;
+		font-weight: bold;
+}
+h1{
+  font-size: 2.5rem;
+	color: #004a99; /* Professional Blue */
+},
 h2,
 h3,
 h4,
@@ -128,6 +158,7 @@ hr {
   border-top: 1px solid rgb(var(--gray-light));
 }
 @media (max-width: 720px) {
+  .service-grid { grid-template-columns: 1fr; }
   body {
     font-size: 18px;
   }
