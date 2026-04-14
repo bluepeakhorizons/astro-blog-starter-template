@@ -26,6 +26,7 @@ import { SITE_TITLE } from '../consts';
 	h2 {
 		margin: 0;
 		font-size: 1em;
+		flex: 1; /* Added to take up equal space on the left */
 	}
 
 	h2 a,
@@ -37,6 +38,14 @@ import { SITE_TITLE } from '../consts';
 		align-items: center;
 		justify-content: space-between;
 	}
+	
+	/* Centering Logic */
+	.internal-links {
+		display: flex;
+		justify-content: center;
+		flex: 1; /* Added to allow centering within the nav */
+	}
+
 	nav a {
 		padding: 1em 0.5em;
 		color: var(--black);
@@ -47,13 +56,19 @@ import { SITE_TITLE } from '../consts';
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
-	.social-links,
-	.social-links a {
-		display: flex;
+	.social-links {
+		display: flex; [cite: 10]
+		flex: 1; /* Added to take up equal space on the right */
+		justify-content: flex-end; /* Keeps social links aligned to the right edge */
 	}
+	
 	@media (max-width: 720px) {
 		.social-links {
 			display: none;
+		}
+		/* Optional: Remove centering on mobile if the logo needs more space */
+		h2, .internal-links {
+			flex: initial;
 		}
 	}
 </style>
